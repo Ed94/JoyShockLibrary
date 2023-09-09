@@ -7,6 +7,7 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 #include <algorithm> // std::min, std::max and std::clamp
+#include <mutex>
 
 // You don't need to look at these. These will just be used internally by the GamepadMotion class declared below.
 // You can ignore anything in namespace GamepadMotionHelpers.

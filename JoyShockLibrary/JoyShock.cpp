@@ -1,14 +1,16 @@
 #pragma once
 
-#include "JoyShockLibrary.h"
+#include <atomic>
 #include <bitset>
-#include "hidapi.h"
 #include <chrono>
+#include <cstring>
 #include <thread>
 #include <unordered_map>
-#include <atomic>
+
+#include "JoyShockLibrary.h"
+#include "hidapi/hidapi.h"
+#include "GamepadMotion.hpp"
 #include "tools.cpp"
-#include <cstring>
 
 #ifdef __GNUC__
 #define _wcsdup wcsdup

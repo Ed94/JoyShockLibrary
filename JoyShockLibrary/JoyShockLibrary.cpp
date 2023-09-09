@@ -1,15 +1,17 @@
 // JoyShockLibrary.cpp : Defines the exported functions for the DLL application.
 //
 
-#include "JoyShockLibrary.h"
 #include <bitset>
-#include "hidapi.h"
 #include <chrono>
 #include <thread>
 #include <shared_mutex>
 #include <string>
 #include <unordered_map>
 #include <atomic>
+
+#include "hidapi/hidapi.h"
+#include "JoyShockLibrary.h"
+
 #include "GamepadMotion.hpp"
 #include "JoyShock.cpp"
 #include "InputHelpers.cpp"
